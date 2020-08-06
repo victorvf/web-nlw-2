@@ -1,0 +1,38 @@
+#page-teacher-list {
+  width: 100vw;
+  height: 100vh;
+}
+
+#search-teachers {
+  margin-top: 3.2rem;
+}
+
+#search-teachers label {
+  color: var(--color-text-in-primary);
+}
+
+#page-teacher-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+
+@media (min-width: 700px) {
+  #page-teacher-list {
+    max-width: 100%;
+  }
+
+  #search-teachers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+    position: absolute;
+    bottom: -2rem;
+  }
+
+  #page-teacher-list main {
+    padding: 32px 0;
+    max-width: 74rem;
+    margin: 0 auto;
+  }
+}
